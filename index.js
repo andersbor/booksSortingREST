@@ -19,10 +19,7 @@ Vue.createApp({
                 alert(ex.message) // https://www.w3schools.com/js/js_popup.asp
             }
         },
-
-
         sortById() {
-            // https://www.w3schools.com/js/js_array_sort.asp
             this.getAll(baseUrl + "?sort_by=id")
         },
         sortByTitle() {
@@ -34,7 +31,7 @@ Vue.createApp({
         sortByPriceDescending() {
             this.getAll(baseUrl + "?sort_by=priceDesc")
         },
-        // All sortByXx() methods can be combined into a single parametrized method
+        // All sortByXx() methods can be combined into a single parameterized method
         sortBy(attributeToSortBy) {
             this.getAll(baseUrl + "?sort_by=" + attributeToSortBy)
         }
